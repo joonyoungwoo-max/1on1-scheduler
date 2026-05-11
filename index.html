@@ -145,7 +145,15 @@
   .spinner { display: inline-block; width: 20px; height: 20px; border: 2px solid var(--border); border-top-color: var(--text-secondary); border-radius: 50%; animation: spin 0.7s linear infinite; margin-bottom: 10px; }
   @keyframes spin { to { transform: rotate(360deg); } }
 
-  .export-bar { margin-top: 2rem; display: flex; justify-content: flex-end; }
+  .export-bar { margin-top: 2rem; display: flex; justify-content: space-between; align-items: center; }
+  .form-link-btn {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 13px; font-weight: 500; color: var(--text-secondary);
+    text-decoration: none; padding: 9px 18px; border-radius: 8px;
+    border: 1px solid var(--border); background: var(--surface);
+    transition: all 0.15s; white-space: nowrap;
+  }
+  .form-link-btn:hover { border-color: var(--border-strong); color: var(--text-primary); background: var(--bg); }
 
   .toast {
     position: fixed; bottom: 1.5rem; left: 50%;
@@ -191,6 +199,7 @@
 <header>
   <span class="logo">WOORHI · 1on1</span>
   <div class="header-right">
+    <a href="https://forms.gle/4gy6yaQrZMCNdygf9" target="_blank" style="font-family:var(--mono);font-size:11px;letter-spacing:0.08em;padding:3px 12px;border:1px solid rgba(255,255,255,0.25);border-radius:20px;color:rgba(255,255,255,0.7);text-decoration:none;transition:all 0.15s;" onmouseover="this.style.color='rgba(255,255,255,0.95)';this.style.borderColor='rgba(255,255,255,0.6)'" onmouseout="this.style.color='rgba(255,255,255,0.7)';this.style.borderColor='rgba(255,255,255,0.25)'">어젠다 작성 →</a>
     <button class="refresh-btn" onclick="loadSlots()">↻ 새로고침</button>
     <button class="admin-badge" id="adminToggle" onclick="handleAdminClick()">관리자 모드</button>
   </div>
@@ -246,6 +255,9 @@
   </div>
 
   <div class="export-bar" id="exportBar" style="display:none;">
+    <a class="form-link-btn" href="https://forms.gle/4gy6yaQrZMCNdygf9" target="_blank">
+      &#128203; 1on1 어젠다 작성하기 →
+    </a>
     <button class="btn" onclick="copyResult()">결과 복사</button>
   </div>
 </main>
@@ -404,6 +416,7 @@
       statsBar.style.display = 'none';
       exportBar.style.display = 'none';
       container.innerHTML = '<div class="empty-state"><div class="icon">◻</div><p>아직 슬롯이 없습니다.<br>관리자 모드에서 1on1 시간을 추가해주세요.</p></div>';
+      document.getElementById('exportBar').style.display = 'flex';
       return;
     }
 
