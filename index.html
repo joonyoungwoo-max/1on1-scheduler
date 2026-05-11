@@ -42,36 +42,21 @@
   .logo { font-family: var(--mono); font-size: 13px; letter-spacing: 0.12em; opacity: 0.9; }
   .header-right { display: flex; align-items: center; gap: 10px; }
   .admin-badge {
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 0.08em;
-    padding: 3px 10px;
-    border: 1px solid rgba(255,255,255,0.25);
-    border-radius: 20px;
-    color: rgba(255,255,255,0.6);
-    cursor: pointer;
-    transition: all 0.15s;
-    user-select: none;
-    background: none;
+    font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em;
+    padding: 3px 10px; border: 1px solid rgba(255,255,255,0.25); border-radius: 20px;
+    color: rgba(255,255,255,0.6); cursor: pointer; transition: all 0.15s;
+    user-select: none; background: none;
   }
   .admin-badge:hover { border-color: rgba(255,255,255,0.6); color: rgba(255,255,255,0.9); }
   .admin-badge.active { background: var(--accent-fg); color: var(--accent); border-color: var(--accent-fg); }
-
   .refresh-btn {
-    font-family: var(--mono);
-    font-size: 11px;
-    padding: 3px 10px;
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 20px;
-    color: rgba(255,255,255,0.5);
-    background: none;
-    cursor: pointer;
-    transition: all 0.15s;
+    font-family: var(--mono); font-size: 11px; padding: 3px 10px;
+    border: 1px solid rgba(255,255,255,0.2); border-radius: 20px;
+    color: rgba(255,255,255,0.5); background: none; cursor: pointer; transition: all 0.15s;
   }
   .refresh-btn:hover { color: rgba(255,255,255,0.85); border-color: rgba(255,255,255,0.5); }
 
   main { max-width: 720px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
-
   .page-title { margin-bottom: 2rem; }
   .page-title h1 { font-size: 28px; font-weight: 600; letter-spacing: -0.02em; }
   .page-title p { margin-top: 6px; font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
@@ -88,15 +73,9 @@
   .form-group { display: flex; flex-direction: column; gap: 4px; }
   .form-group label { font-size: 11px; color: var(--text-tertiary); letter-spacing: 0.06em; text-transform: uppercase; }
   .form-group input {
-    font-family: var(--mono);
-    font-size: 14px;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 8px 12px;
-    color: var(--text-primary);
-    outline: none;
-    transition: border-color 0.15s;
+    font-family: var(--mono); font-size: 14px; background: var(--bg);
+    border: 1px solid var(--border); border-radius: 8px; padding: 8px 12px;
+    color: var(--text-primary); outline: none; transition: border-color 0.15s;
   }
   .form-group input:focus { border-color: var(--border-strong); }
   input[type="date"] { width: 150px; }
@@ -104,18 +83,10 @@
   .label-input { width: 160px; }
 
   .btn {
-    font-family: var(--sans);
-    font-size: 13px;
-    font-weight: 500;
-    padding: 9px 18px;
-    border-radius: 8px;
-    border: 1px solid var(--border);
-    background: var(--surface);
-    color: var(--text-primary);
-    cursor: pointer;
-    transition: all 0.15s;
-    white-space: nowrap;
-    align-self: flex-end;
+    font-family: var(--sans); font-size: 13px; font-weight: 500;
+    padding: 9px 18px; border-radius: 8px; border: 1px solid var(--border);
+    background: var(--surface); color: var(--text-primary); cursor: pointer;
+    transition: all 0.15s; white-space: nowrap; align-self: flex-end;
   }
   .btn:hover { background: var(--bg); border-color: var(--border-strong); }
   .btn-dark { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
@@ -124,29 +95,16 @@
 
   .date-group { margin-bottom: 1.5rem; }
   .date-heading {
-    font-family: var(--mono);
-    font-size: 12px;
-    letter-spacing: 0.1em;
-    color: var(--text-tertiary);
-    text-transform: uppercase;
-    padding: 0 4px;
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    font-family: var(--mono); font-size: 12px; letter-spacing: 0.1em;
+    color: var(--text-tertiary); text-transform: uppercase; padding: 0 4px;
+    margin-bottom: 8px; display: flex; align-items: center; gap: 8px;
   }
   .date-heading::after { content: ''; flex: 1; height: 1px; background: var(--border); }
 
   .slot-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 14px 16px;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 6px;
-    transition: border-color 0.15s, opacity 0.2s;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 14px 16px; display: flex; align-items: center; gap: 16px;
+    margin-bottom: 6px; transition: border-color 0.15s, opacity 0.2s;
   }
   .slot-card:hover { border-color: var(--border-strong); }
   .slot-card.booked { background: var(--booked-bg); border-color: var(--booked-border); }
@@ -159,43 +117,21 @@
   .slot-action { display: flex; align-items: center; gap: 8px; margin-left: auto; }
 
   .name-input {
-    font-family: var(--sans);
-    font-size: 14px;
-    padding: 7px 12px;
-    border-radius: 8px;
-    border: 1px solid var(--border);
-    background: var(--bg);
-    color: var(--text-primary);
-    width: 120px;
-    outline: none;
-    transition: border-color 0.15s;
+    font-family: var(--sans); font-size: 14px; padding: 7px 12px;
+    border-radius: 8px; border: 1px solid var(--border); background: var(--bg);
+    color: var(--text-primary); width: 120px; outline: none; transition: border-color 0.15s;
   }
   .name-input:focus { border-color: var(--border-strong); }
 
   .book-btn {
-    font-size: 13px;
-    font-weight: 500;
-    padding: 7px 16px;
-    border-radius: 8px;
-    border: 1px solid var(--border-strong);
-    background: var(--surface);
-    color: var(--text-primary);
-    cursor: pointer;
-    white-space: nowrap;
-    transition: all 0.15s;
+    font-size: 13px; font-weight: 500; padding: 7px 16px; border-radius: 8px;
+    border: 1px solid var(--border-strong); background: var(--surface);
+    color: var(--text-primary); cursor: pointer; white-space: nowrap; transition: all 0.15s;
   }
   .book-btn:hover { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
 
-  .booked-name {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--booked-text);
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
+  .booked-name { font-size: 14px; font-weight: 600; color: var(--booked-text); display: flex; align-items: center; gap: 6px; }
   .booked-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--booked-text); flex-shrink: 0; }
-
   .cancel-btn { font-size: 12px; color: var(--text-tertiary); background: none; border: none; cursor: pointer; padding: 4px 6px; border-radius: 4px; transition: color 0.15s; }
   .cancel-btn:hover { color: var(--danger); }
   .delete-btn { font-size: 11px; color: var(--text-tertiary); background: none; border: none; cursor: pointer; padding: 4px 8px; border-radius: 4px; opacity: 0.45; transition: all 0.15s; }
@@ -209,56 +145,31 @@
   .spinner { display: inline-block; width: 20px; height: 20px; border: 2px solid var(--border); border-top-color: var(--text-secondary); border-radius: 50%; animation: spin 0.7s linear infinite; margin-bottom: 10px; }
   @keyframes spin { to { transform: rotate(360deg); } }
 
-  .export-bar { margin-top: 2rem; display: flex; justify-content: flex-end; gap: 8px; }
+  .export-bar { margin-top: 2rem; display: flex; justify-content: flex-end; }
 
   .toast {
-    position: fixed;
-    bottom: 1.5rem;
-    left: 50%;
+    position: fixed; bottom: 1.5rem; left: 50%;
     transform: translateX(-50%) translateY(12px);
-    background: var(--accent);
-    color: var(--accent-fg);
-    font-size: 13px;
-    padding: 10px 20px;
-    border-radius: 20px;
-    opacity: 0;
-    transition: all 0.25s;
-    pointer-events: none;
-    white-space: nowrap;
-    z-index: 999;
+    background: var(--accent); color: var(--accent-fg);
+    font-size: 13px; padding: 10px 20px; border-radius: 20px;
+    opacity: 0; transition: all 0.25s; pointer-events: none;
+    white-space: nowrap; z-index: 999;
   }
   .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
   .pw-modal-bg {
-    display: none;
-    position: fixed; inset: 0;
-    background: rgba(0,0,0,0.35);
-    z-index: 200;
-    align-items: center;
-    justify-content: center;
+    display: none; position: fixed; inset: 0;
+    background: rgba(0,0,0,0.35); z-index: 200;
+    align-items: center; justify-content: center;
   }
   .pw-modal-bg.open { display: flex; }
-  .pw-modal {
-    background: var(--surface);
-    border-radius: 14px;
-    padding: 2rem;
-    width: 320px;
-    border: 1px solid var(--border);
-  }
+  .pw-modal { background: var(--surface); border-radius: 14px; padding: 2rem; width: 320px; border: 1px solid var(--border); }
   .pw-modal h2 { font-size: 16px; font-weight: 600; margin-bottom: 6px; }
   .pw-modal p { font-size: 13px; color: var(--text-secondary); margin-bottom: 16px; }
   .pw-input {
-    width: 100%;
-    font-size: 15px;
-    padding: 10px 14px;
-    border-radius: 8px;
-    border: 1px solid var(--border);
-    background: var(--bg);
-    color: var(--text-primary);
-    outline: none;
-    margin-bottom: 12px;
-    font-family: var(--mono);
-    letter-spacing: 0.15em;
+    width: 100%; font-size: 15px; padding: 10px 14px; border-radius: 8px;
+    border: 1px solid var(--border); background: var(--bg); color: var(--text-primary);
+    outline: none; margin-bottom: 12px; font-family: var(--mono); letter-spacing: 0.15em;
   }
   .pw-input:focus { border-color: var(--border-strong); }
   .pw-btns { display: flex; gap: 8px; }
@@ -289,7 +200,8 @@
   <div class="pw-modal">
     <h2>관리자 확인</h2>
     <p>슬롯 추가/삭제는 관리자만 가능합니다.</p>
-    <input type="password" class="pw-input" id="pwInput" placeholder="비밀번호" onkeydown="if(event.key==='Enter') checkPw()" />
+    <input type="password" class="pw-input" id="pwInput" placeholder="비밀번호"
+      onkeydown="if(event.key==='Enter') checkPw()" />
     <p class="pw-error" id="pwError">비밀번호가 틀렸습니다.</p>
     <div class="pw-btns">
       <button class="btn" onclick="closePwModal()">취소</button>
@@ -329,7 +241,9 @@
     </div>
   </div>
 
-  <div id="slotContainer"><div class="loading-state"><div class="spinner"></div><br>슬롯 불러오는 중...</div></div>
+  <div id="slotContainer">
+    <div class="loading-state"><div class="spinner"></div><br>슬롯 불러오는 중...</div>
+  </div>
 
   <div class="export-bar" id="exportBar" style="display:none;">
     <button class="btn" onclick="copyResult()">결과 복사</button>
@@ -339,43 +253,40 @@
 <div class="toast" id="toast"></div>
 
 <script>
-  const API = 'https://script.google.com/macros/s/AKfycbyW3H--iD9cZnTTdK9frMr2dggmdS9qwLo9hRn_KwgEDhstwCXFsiFk5HVVFZLJIlLhxw/exec';
+  const SUPABASE_URL = 'https://htqxvirbyhtwquqyqiad.supabase.co';
+  const SUPABASE_KEY = 'sb_publishable_0-YW5Y-tqrNn_i5cfTOSVQ_CtC3-jle';
   const ADMIN_PW = '1234';
   const DURATION = 30;
 
   let slots = [];
   let adminMode = false;
 
-  function api(params) {
-    return new Promise((resolve, reject) => {
-      const cbName = 'cb_' + Date.now() + '_' + Math.floor(Math.random()*10000);
-      const url = new URL(API);
-      Object.entries(params).forEach(([k,v]) => url.searchParams.set(k, v));
-      url.searchParams.set('callback', cbName);
-      const script = document.createElement('script');
-      const timer = setTimeout(() => {
-        cleanup(); reject(new Error('timeout'));
-      }, 10000);
-      function cleanup() {
-        clearTimeout(timer);
-        delete window[cbName];
-        if (script.parentNode) script.parentNode.removeChild(script);
-      }
-      window[cbName] = (data) => { cleanup(); resolve(data); };
-      script.onerror = () => { cleanup(); reject(new Error('script error')); };
-      script.src = url.toString();
-      document.head.appendChild(script);
+  async function sb(method, path, body) {
+    const res = await fetch(SUPABASE_URL + '/rest/v1/' + path, {
+      method,
+      headers: {
+        'apikey': SUPABASE_KEY,
+        'Authorization': 'Bearer ' + SUPABASE_KEY,
+        'Content-Type': 'application/json',
+        'Prefer': method === 'POST' ? 'return=representation' : 'return=minimal'
+      },
+      body: body ? JSON.stringify(body) : undefined
     });
+    if (method === 'DELETE' || (method === 'PATCH' && res.status === 204)) return {};
+    const text = await res.text();
+    return text ? JSON.parse(text) : {};
   }
 
   async function loadSlots() {
-    document.getElementById('slotContainer').innerHTML = '<div class="loading-state"><div class="spinner"></div><br>슬롯 불러오는 중...</div>';
+    document.getElementById('slotContainer').innerHTML =
+      '<div class="loading-state"><div class="spinner"></div><br>슬롯 불러오는 중...</div>';
     try {
-      const data = await api({ action: 'getSlots' });
-      slots = (data.slots || []).sort((a,b) => (a.date+a.time).localeCompare(b.date+b.time));
+      const data = await sb('GET', 'slots?select=*&order=date,time');
+      slots = Array.isArray(data) ? data : [];
       render();
     } catch(e) {
-      document.getElementById('slotContainer').innerHTML = '<div class="empty-state"><p>데이터를 불러오지 못했습니다.<br>잠시 후 새로고침 해주세요.</p></div>';
+      document.getElementById('slotContainer').innerHTML =
+        '<div class="empty-state"><p>데이터를 불러오지 못했습니다.<br>잠시 후 새로고침 해주세요.</p></div>';
     }
   }
 
@@ -387,9 +298,10 @@
     const btn = document.getElementById('addBtn');
     btn.disabled = true; btn.textContent = '추가 중...';
     try {
-      const res = await api({ action: 'addSlot', date, time, label });
-      if (res.error) { showToast(res.error === '중복 슬롯' ? '이미 같은 시간 슬롯이 있습니다.' : res.error); }
-      else { document.getElementById('inputLabel').value = ''; showToast('슬롯이 추가됐습니다.'); await loadSlots(); }
+      await sb('POST', 'slots', { date, time, label, booked: '' });
+      document.getElementById('inputLabel').value = '';
+      showToast('슬롯이 추가됐습니다.');
+      await loadSlots();
     } catch(e) { showToast('오류가 발생했습니다.'); }
     btn.disabled = false; btn.textContent = '+ 슬롯 추가';
   }
@@ -401,10 +313,14 @@
     const card = document.getElementById('card_' + id);
     if (card) card.classList.add('loading');
     try {
-      const res = await api({ action: 'book', id, name });
-      if (res.error === '이미 예약됨') { showToast('방금 다른 분이 예약했습니다. 다른 시간을 선택해주세요.'); await loadSlots(); }
-      else if (res.error) { showToast(res.error); if (card) card.classList.remove('loading'); }
-      else { showToast(name + '님 예약 완료! 캘린더에 등록됐습니다.'); await loadSlots(); }
+      const current = await sb('GET', `slots?id=eq.${id}&select=booked`);
+      if (Array.isArray(current) && current[0]?.booked) {
+        showToast('방금 다른 분이 예약했습니다. 다른 시간을 선택해주세요.');
+        await loadSlots(); return;
+      }
+      await sb('PATCH', `slots?id=eq.${id}`, { booked: name });
+      showToast(name + '님 예약 완료!');
+      await loadSlots();
     } catch(e) { showToast('오류가 발생했습니다.'); if (card) card.classList.remove('loading'); }
   }
 
@@ -413,9 +329,9 @@
     const card = document.getElementById('card_' + id);
     if (card) card.classList.add('loading');
     try {
-      const res = await api({ action: 'cancel', id });
-      if (res.success) { showToast((slot ? slot.booked : '') + '님 예약 취소'); await loadSlots(); }
-      else { showToast('오류가 발생했습니다.'); if (card) card.classList.remove('loading'); }
+      await sb('PATCH', `slots?id=eq.${id}`, { booked: '' });
+      showToast((slot?.booked || '') + '님 예약 취소');
+      await loadSlots();
     } catch(e) { showToast('오류가 발생했습니다.'); if (card) card.classList.remove('loading'); }
   }
 
@@ -423,20 +339,26 @@
     const card = document.getElementById('card_' + id);
     if (card) card.classList.add('loading');
     try {
-      const res = await api({ action: 'deleteSlot', id });
-      if (res.success) { showToast('슬롯 삭제됨'); await loadSlots(); }
-      else { showToast('오류가 발생했습니다.'); if (card) card.classList.remove('loading'); }
+      await sb('DELETE', `slots?id=eq.${id}`);
+      showToast('슬롯 삭제됨');
+      await loadSlots();
     } catch(e) { showToast('오류가 발생했습니다.'); if (card) card.classList.remove('loading'); }
   }
 
   function handleAdminClick() {
-    if (adminMode) { adminMode = false; document.getElementById('adminToggle').classList.remove('active'); document.getElementById('adminPanel').classList.remove('open'); render(); }
-    else { document.getElementById('pwModal').classList.add('open'); setTimeout(() => document.getElementById('pwInput').focus(), 50); }
+    if (adminMode) {
+      adminMode = false;
+      document.getElementById('adminToggle').classList.remove('active');
+      document.getElementById('adminPanel').classList.remove('open');
+      render();
+    } else {
+      document.getElementById('pwModal').classList.add('open');
+      setTimeout(() => document.getElementById('pwInput').focus(), 50);
+    }
   }
 
   function checkPw() {
-    const val = document.getElementById('pwInput').value;
-    if (val === ADMIN_PW) {
+    if (document.getElementById('pwInput').value === ADMIN_PW) {
       closePwModal();
       adminMode = true;
       document.getElementById('adminToggle').classList.add('active');
@@ -508,8 +430,8 @@
               <div class="slot-label-text">${s.label || ''}</div>
               <div class="slot-action">
                 <span class="booked-name"><span class="booked-dot"></span>${s.booked}</span>
-                <button class="cancel-btn" onclick="cancel('${s.id}')">취소</button>
-                ${adminMode ? `<button class="delete-btn" onclick="deleteSlot('${s.id}')">삭제</button>` : ''}
+                <button class="cancel-btn" onclick="cancel(${s.id})">취소</button>
+                ${adminMode ? `<button class="delete-btn" onclick="deleteSlot(${s.id})">삭제</button>` : ''}
               </div>
             </div>`;
         } else {
@@ -522,9 +444,9 @@
               <div class="slot-label-text">${s.label || ''}</div>
               <div class="slot-action">
                 <input class="name-input" id="ni_${s.id}" type="text" placeholder="이름 입력"
-                  onkeydown="if(event.key==='Enter') book('${s.id}')" />
-                <button class="book-btn" onclick="book('${s.id}')">예약</button>
-                ${adminMode ? `<button class="delete-btn" onclick="deleteSlot('${s.id}')">삭제</button>` : ''}
+                  onkeydown="if(event.key==='Enter') book(${s.id})" />
+                <button class="book-btn" onclick="book(${s.id})">예약</button>
+                ${adminMode ? `<button class="delete-btn" onclick="deleteSlot(${s.id})">삭제</button>` : ''}
               </div>
             </div>`;
         }
@@ -543,7 +465,9 @@
       text += `\n${formatDate(date)}\n`;
       groups[date].forEach(s => { text += `  ${s.time}–${addTime(s.time,DURATION)}  ${s.booked}\n`; });
     });
-    navigator.clipboard.writeText(text).then(() => showToast('클립보드에 복사됐습니다.')).catch(() => showToast('복사 실패'));
+    navigator.clipboard.writeText(text)
+      .then(() => showToast('클립보드에 복사됐습니다.'))
+      .catch(() => showToast('복사 실패'));
   }
 
   function showToast(msg) {
